@@ -50,6 +50,9 @@ With that do
 docker exec -it <name of container>  bash
 ```
 
+NOTE: An alternative to this, is actually click the terminal in the above jupyter environment. With that you will have a terminal inside your container.
+
+
 Now you are inside the container so you can go to the folder where a newly created `mlruns` directory is (`example_book`) and do
 
 ```
