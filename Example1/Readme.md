@@ -66,3 +66,24 @@ You can see that the experiment has been run once.
 If you run the cell 19 again, other experiments will be reflected there
 
 Also notice that the artifacts are logged too. Have fun exploring the MLFlow UI page!
+
+
+## Serving a model
+
+In the jupyter notebook `local_serving.ipynb` we start serving a model
+
+We go to the terminal inside the jupyter environment and from the folder that contains mlruns we do
+
+```
+mlflow models serve --model-uri runs:/<MODELRUN>/<MODELNAME> -p 1235
+```
+
+For example in this case
+
+```
+mlflow models serve --model-uri runs:/5c26f4ae1a284ccfa36e1f4017a361e4/log_reg_model -p 1235
+```
+
+Once you do that you can start running the cells of the notebook.
+
+
