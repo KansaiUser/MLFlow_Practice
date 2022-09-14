@@ -72,7 +72,7 @@ Also notice that the artifacts are logged too. Have fun exploring the MLFlow UI 
 
 In the jupyter notebook `local_serving.ipynb` we start serving a model
 
-We go to the terminal inside the jupyter environment and from the folder that contains mlruns we do
+Before, we go to the terminal inside the jupyter environment and from the folder that contains mlruns (`cd example_book`) we do
 
 ```
 mlflow models serve --model-uri runs:/<MODELRUN>/<MODELNAME> -p 1235
@@ -83,7 +83,7 @@ For example in this case
 ```
 mlflow models serve --model-uri runs:/5c26f4ae1a284ccfa36e1f4017a361e4/log_reg_model -p 1235
 ```
-
+This command will create a new conda environemnt before hosting the model in a local server.
 Once you do that you can start running the cells of the notebook.
 
 
